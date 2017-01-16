@@ -9,7 +9,7 @@ class AccueilController extends Controller{
 
     public function accueilAction(){
         $objProductModel = $this->getProductsModel();
-        $lastProduct = $objProductModel->getLastProduct();
+        $lastProduct = $objProductModel->getLastProduct("array");
         $this->render("accueil",$lastProduct);
     }
 

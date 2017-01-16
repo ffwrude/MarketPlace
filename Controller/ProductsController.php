@@ -10,7 +10,7 @@ class ProductsController extends Controller{
 
     public function productsAction(){
         $objProductModel = $this->getProductsModel();
-        $AllProducts = $objProductModel->getAllProducts();
+        $AllProducts = $objProductModel->getAllProducts("array");
         $this->render("products",$AllProducts);
     }
 

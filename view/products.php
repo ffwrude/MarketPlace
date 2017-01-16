@@ -12,7 +12,7 @@
                         echo $x;
                     echo "</th>";
                     foreach($data as $key=>$val){
-                        echo "<td>";
+                        echo "<td onclick='document.location.href=\"index.php?pg=adminProducts&id=".$data["id"]."\";' style='cursor:pointer;'>";
                             echo $val;
                         echo "</td>";
                     }

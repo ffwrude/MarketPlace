@@ -8,7 +8,7 @@ abstract class Controller{
         return $pdo->getPdo();
     }
 
-    protected function render($page,$array){
+    protected function render($page,$array){ //$array norme ce qu'on va récuperer dans les vues.
         include(__DIR__ . "/../view/layout.php");
     }
 }
