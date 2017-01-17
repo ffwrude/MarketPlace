@@ -1,5 +1,4 @@
 <form name="formulaire" method="post" action="">
-    <!-- L'action va vers une page ok mais dans quelle page ??? -->
     <table border='1'>
         <?php
             $tableau = array("nom","description","prix","quantite");
